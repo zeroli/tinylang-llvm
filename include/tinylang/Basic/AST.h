@@ -43,7 +43,7 @@ private:
 public:
     Factor(ValueKind Kind, llvm::StringRef Val)
         : Kind(Kind), Val(Val) { }
-    
+
     ValueKind getKind() { return Kind; }
     llvm::StringRef getVal() { return Val; }
 
@@ -84,7 +84,7 @@ public:
     WithDecl(llvm::SmallVector<llvm::StringRef, 8> Vars,
             Expr* E)
         : Vars(Vars), E(E) { }
-    
+
     VarVector::const_iterator begin() {
         return Vars.begin();
     }

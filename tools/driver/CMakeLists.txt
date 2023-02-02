@@ -1,5 +1,6 @@
 set(LLVM_LINK_COMPONENTS
 	Support
+	Core
 )
 
 add_tinylang_tool(tinylang
